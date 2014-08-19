@@ -34,29 +34,29 @@ Template Name: Connect
 				<?php the_content(); ?>
 			</div>
 			<div class="program-list">
-				<?php if( have_rows('program') ): ?>
+				<?php if( have_rows('group') ): ?>
 				<h2>Groups</h2>
  
 				    <ul class="programs">
 				 
-				    <?php while( have_rows('program') ): the_row(); ?>
+				    <?php while( have_rows('group') ): the_row(); ?>
 				 
 				        <li class="program panel clearfix">
-							<div class="large-4 columns">
-					        	<?php $image = get_sub_field('program_logo');?>
+							<div class="small-centered medium-4 medium-uncentered columns">
+					        	<?php $image = get_sub_field('group_logo');?>
 								<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
 							</div>
-							<div class="large-8 columns">
-					        	<h3><?php the_sub_field('program_name'); ?></h3>
-					        	<p><?php the_sub_field('program_description'); ?></p>
+							<div class="medium-8 columns">
+					        	<h3><?php the_sub_field('group_name'); ?></h3>
+					        	<p><?php the_sub_field('group_description'); ?></p>
 					        	<div class="row">
-					        		<div class="large-5 columns">
+					        		<div class="medium-5 columns">
 					        			<h5 class="subheader">Meets</h5>
-					        			<?php the_sub_field('program_meets'); ?>
+					        			<?php the_sub_field('group_meets'); ?>
 					        		</div>
-					        		<div class="large-7 columns">
+					        		<div class="medium-7 columns">
 					        			<h5 class="subheader">Website</h5>
-					        			<?php the_sub_field('program_website'); ?>
+					        			<?php the_sub_field('group_website'); ?>
 					        		</div>
 					        	</div>
 					        </div>

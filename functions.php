@@ -118,6 +118,4 @@ if ( ! function_exists( 'reverie_entry_meta' ) ) {
     }
 };
 
-
-
 ?>
